@@ -44,7 +44,7 @@ class product {
 
 ## Installation & Setup
 
-### 1. Clone the repository
+1. Clone the repository
 
 git clone https://github.com/nguyenhuynhphuongloc/99Tech-CodeChallenge.git
 
