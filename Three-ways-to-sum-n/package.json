@@ -1,0 +1,17 @@
+{
+  "name": "three-ways-to-sum-n",
+  "version": "1.0.0",
+  "description": "`n` is an integer such that the sum `1 + 2 + ... + n` does not exceed `Number.MAX_SAFE_INTEGER`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
