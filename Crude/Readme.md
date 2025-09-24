@@ -48,8 +48,6 @@ class product {
 
 git clone https://github.com/nguyenhuynhphuongloc/99Tech-CodeChallenge.git
 
-cd <CRUDE>
-
 
 2. npm install dependencies
 
@@ -61,9 +59,13 @@ Add the following variables to .env
 
 # Database configuration
 DB_HOST=localhost
+
 DB_PORT= your_db_port
+
 DB_USERNAME=root
+
 DB_PASSWORD=your_password
+
 DB_NAME=product_db
 
 # Application configuration
