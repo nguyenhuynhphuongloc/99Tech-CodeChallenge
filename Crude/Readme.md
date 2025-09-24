@@ -1,4 +1,4 @@
-# Product Management API
+# Problem2
 
 ## Overview
 
@@ -10,12 +10,9 @@ class product {
     
   id!: string;
 
- 
   name!: string;
-
  
   description?: string;
-
 
   price!: number;
 
@@ -26,17 +23,9 @@ class product {
 
 ## Result
 
+![HomePage](./images/image1.png)
 
 
-
-
-
-
-
-## Prerequisites
-- Node.js >= 18
-- npm or yarn
-- MySQL database
 
 
 
