@@ -57,3 +57,10 @@ Suppose we calculate sums for a set of queries: `5, 10, 5`.
    `{0 => 0, 1 => 1, 2 => 3, 3 => 6, 4 => 10, 5 => 15, 6 => 21, 7 => 28, 8 => 36, 9 => 45, 10 => 55}`  
 
 Future queries can then be answered in O(1) time.
+
+
+## How to run
+
+1. CD THREE-WAYS-TO-SUM-N
+
+2. npx ts-node problem1.ts in terminal
