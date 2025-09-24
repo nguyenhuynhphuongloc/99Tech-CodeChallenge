@@ -55,6 +55,6 @@ export class ProductController {
             res.status(404).json({ message: "Product not found" });
             return;
         }
-        res.status(204).send();
+        res.status(204).send("product is deleted successfully");
     }
 }

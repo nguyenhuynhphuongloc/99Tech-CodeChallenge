@@ -23,18 +23,32 @@ class product {
 
 ## Result
 
++ Create a resource.
 ![HomePage](./images/image1.png)
 
+![HomePage](./images/image2.png)
+
++ List resources with basic filters (min_price,max_price)
+
+![HomePage](./images/image3.png)
+
++ Get details of a resource
+![HomePage](./images/image4.png)
+
++ Update resource details.
+![HomePage](./images/image5.png)
 
 
-
++ Delete resource details.
+![HomePage](./images/image6.png)
 
 ## Installation & Setup
 
 ### 1. Clone the repository
 
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/nguyenhuynhphuongloc/99Tech-CodeChallenge.git
+
+cd <CRUDE>
 
 
 2. npm install dependencies
