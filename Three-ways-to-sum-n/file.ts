@@ -28,11 +28,6 @@ function sum_to_n_a(n: number): number {
 // Complexity: O(1)
 function sum_to_n_b(n: number) {
 
-  if (!Number.isInteger(n)) {
-    console.error("n must be integer")
-    return 0;
-  }
-
   if (n <= 0) {
     console.error(("n is not valid"));
     return 0;
