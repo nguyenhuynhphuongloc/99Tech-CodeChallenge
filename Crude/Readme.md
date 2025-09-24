@@ -74,5 +74,5 @@ PORT=3000
 Log into MySQL and create the database: CREATE DATABASE product_db;
 
 
-Running the Application: npm run dev
+Running the Application: npm run dev in terminal
 
