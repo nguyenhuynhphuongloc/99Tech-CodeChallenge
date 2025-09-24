@@ -2,7 +2,7 @@
 
 Analyze
 
-Input: n is any interger and n is always produce a result lesser than Number.MAX_SAFE_INTEGER.
+Input: n is any integer, and it always produces a result less than Number.MAX_SAFE_INTEGER.
 
 Output : return (1+2+3+4.....n)
 
