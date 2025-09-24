@@ -1,4 +1,4 @@
-# Problem1: Three-ways-sum-to-n ( Time Consumption :45p)
+# Problem-1: Three-ways-sum-to-n ( Time Consumption :45p)
 
 Analyze
 
@@ -18,19 +18,19 @@ Approach
 
 Example: n = 2.4 or n <= 0 → error, return 0
 
-+ function sum_to_n_a : I use a brute-force althorim that has the comlexity is O(n)
++ function sum_to_n_a : I use a brute-force althorim that has the complexity is O(n)
 
-+ sum_to_n_b : I notice that (1 + 2 .... +n) = ( n * (n+1))/2 so I just return  (n * (n + 1)) / 2 with  comlexity is O(1)
++ sum_to_n_b : I notice that (1 + 2 .... +n) = ( n * (n+1))/2 so I just return  (n * (n + 1)) / 2 with  the complexity is O(1)
 
 + sum_to_n_c :
 
-Initially, I wanted to create a global array to store sums for n = 1 → n = MAX_SAFE_INTEGER, but memory limitations does't allow this.
+Initially, I wanted to create a global array to store previous computed result for n = 1 → n = MAX_SAFE_INTEGER, but memory limitations does't allow this.
 
 Therefore, I choose a diferent way that is Map<number, number> to store previously computed sums. Ideal of this appoarch is that allows computing sums lazily and avoids recalculating sums for the same n.
 
 + Initialize a global Map is {0,0} which meaning n = 0 -> result -> 0
 
-+ For each query n, we compute sums only if they haven’t been computed before. If n is computed that althorism complexity is O(1), otherwise it is O(n)
++ For each query n, we compute sums only if they haven’t been computed before. If n is computed previously that algorithm complexity is O(1), otherwise it is O(n)
 
 + Previously computed sums are stored in the Map for future use.
 
@@ -39,4 +39,7 @@ Suppose we will calculate n values for a set of queries: 5, 10, 5 and then Map a
 When we query n = 10 that compute sums from 6 → 10, using Map for previous results
 Map after computation: {0=>0, 1=>1, 2=>3, 3=>6, 4=>10, 5=>15, 6=>21, 7=>28, 8=>36, 9=>45, 10=>55} and We can save time for future queries with O(1)
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Problem-2: 
 
