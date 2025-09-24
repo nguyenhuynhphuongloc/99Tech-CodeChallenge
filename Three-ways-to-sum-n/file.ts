@@ -1,14 +1,18 @@
 
-
-const MAX_N = Number.MAX_SAFE_INTEGER
-
 // Using Brute-force
 // Complexity: O(n)
 function sum_to_n_a(n: number): number {
 
+  !Number.isInteger(n)
+
   let sumation: number = 0; // result
 
-  if (n <= 0 || n > MAX_N) {
+  if (!Number.isInteger(n)) {
+    console.error("n must be integer")
+    return 0;
+  }
+
+  if (n <= 0) {
     console.error(("n is not valid"));
     return sumation;
   }
@@ -24,13 +28,22 @@ function sum_to_n_a(n: number): number {
 // Complexity: O(1)
 function sum_to_n_b(n: number) {
 
-  let sumation: number = 0; // result
-
-if (n <= 0 || n > MAX_N) {
-    console.error(("n is not valid"));
-    return sumation;
+  if (!Number.isInteger(n)) {
+    console.error("n must be integer")
+    return 0;
   }
 
+  if (n <= 0) {
+    console.error(("n is not valid"));
+    return 0;
+  }
+
+  let sumation: number = 0; // result
+
+  if (!Number.isInteger(n)) {
+    console.error("n must be integer")
+    return 0;
+  }
 
   sumation = (n * (n + 1)) / 2;
 
@@ -47,8 +60,13 @@ prefix_sum_map.set(0, 0);
 
 function sum_to_n_c(n: number): number {
 
-  if (n <= 0 || n > MAX_N) {
-    console.error("n is not valid");
+  if (!Number.isInteger(n)) {
+    console.error("n must be integer")
+    return 0;
+  }
+
+  if (n <= 0) {
+    console.error("n need to be larger than 0");
     return 0;
   }
 
@@ -73,10 +91,10 @@ type TestCase = { n: number };
 
 const testCases: TestCase[] = [
   { n: 0 },
-  { n: 1 },
+  { n: 3 },
   { n: 5 },
-  { n: 10 },
-  { n: 100 },
+  { n: 6 },
+  { n: 2.4 },
   { n: -3 }
 ];
 
@@ -87,20 +105,17 @@ function main() {
   testCases.forEach((tc, index) => {
     console.log(`\nTestcase ${index + 1}: n=${tc.n}`);
 
-  
+
     const r1 = sum_to_n_a(tc.n);
-   
 
-   
     const r2 = sum_to_n_b(tc.n);
-    
 
-   
+
     const r3 = sum_to_n_c(tc.n);
-   
+
 
     console.log(`Results: sumation_a = ${r1}, sumation_b = ${r2}, sumation_c = ${r3}`);
-  
+
   });
 }
 
