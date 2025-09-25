@@ -12,7 +12,8 @@
 # Resource Definition
 The resource is `UserScore`
 
-class UserScore {
+class UserScore
+{
   id!: string;        // Unique user ID
   
   userName!: string;  // User name
@@ -20,6 +21,7 @@ class UserScore {
   score!: number;     // current score
   
   updatedAt!: Date;   // latest update
+  
 }
 
 # Functional Requirements
@@ -68,6 +70,7 @@ Response (200 OK)
 # Diagram illustrate the flows
 
 ![HomePage](./image/image1.png)
+
 
 
 
