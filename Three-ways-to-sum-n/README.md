@@ -27,11 +27,10 @@ If `n = 2.4` or `n <= 0`, return `0` or display an error.
 - **Time Complexity:** O(n)
 
 #### 2. `sum_to_n_b`
-- I noticed that the sum can be computed directly using the formula:  
-\[
-1 + 2 + ... + n = \frac{n \cdot (n + 1)}{2}
-\]  
-- So I simply return `(n * (n + 1)) / 2`.  
+- I noticed that the sum can be computed directly using the formula:  1 + 2 + ... + n = (n * (n + 1)) / 2
+
+- So I simply return (n * (n + 1)) / 2. 
+
 - **Time Complexity:O(1)
 
 #### 3. `sum_to_n_c`

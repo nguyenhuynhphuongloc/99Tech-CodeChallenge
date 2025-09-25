@@ -49,15 +49,12 @@ class product {
 git clone https://github.com/nguyenhuynhphuongloc/99Tech-CodeChallenge.git
 
 
-2. npm install
-
-
-3. Create .env file
+2. Create .env file
 
 
 Add the following variables to .env
 
-# Database configuration
+3. Database configuration
 DB_HOST=localhost
 
 DB_PORT= your_db_port
@@ -68,13 +65,13 @@ DB_PASSWORD=your_password
 
 DB_NAME=product_db
 
-# Application configuration
+4. Application configuration
 PORT=3000
 
-4. Create MySQL database
+5. Create MySQL database
 
 Log into MySQL and create the database: CREATE DATABASE product_db;
 
 
-Running the Application: npm run dev in terminal
+6. Running the Application: npm run dev in terminal
 
