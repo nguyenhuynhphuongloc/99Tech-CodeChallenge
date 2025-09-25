@@ -52,12 +52,18 @@ class UserScore
 - Body : actionType: string
 
 + Response (200 OK):
+  
 {
 
   "userId": string,
+  
   "userName": string,
+  
   "score": number
+  
   "updatedAt": DATE
+
+}
 
 Error Responses: 401 Unauthorized ,403 Forbidden ,429 Too Many Requests,500 Internal Server Error
 
@@ -104,6 +110,7 @@ Content-Type: text/event-stream
 # Diagram illustrate the flows
 
 ![HomePage](./image/image1.png)
+
 
 
 
