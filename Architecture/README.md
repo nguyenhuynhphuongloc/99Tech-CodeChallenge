@@ -39,6 +39,8 @@ class UserScore
 
 + Authorization & Validation: Authenticate user before updating scores
 
+# API ENDPOINT
+
 1. User Action
    
 + Endpoint: POST /api/actions/complete.
@@ -110,6 +112,7 @@ Content-Type: text/event-stream
 # Diagram illustrate the flows
 
 ![HomePage](./image/image1.png)
+
 
 
 
