@@ -14,8 +14,11 @@ The resource is `UserScore`
 
 class UserScore {
   id!: string;        // Unique user ID
+  
   userName!: string;  // User name
+  
   score!: number;     // current score
+  
   updatedAt!: Date;   // latest update
 }
 
@@ -65,5 +68,6 @@ Response (200 OK)
 # Diagram illustrate the flows
 
 ![HomePage](./image/image1.png)
+
 
 
