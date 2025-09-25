@@ -64,5 +64,6 @@ Response (200 OK)
 
 # Diagram illustrate the flows
 
-![HomePage](./design/image1.png)
+![HomePage](./image/image1.png)
+
 
