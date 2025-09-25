@@ -32,7 +32,7 @@ If `n = 2.4` or `n <= 0`, return `0` or display an error.
 1 + 2 + ... + n = \frac{n \cdot (n + 1)}{2}
 \]  
 - So I simply return `(n * (n + 1)) / 2`.  
-- **Time Complexity:** O(1)
+- **Time Complexity:O(1)
 
 #### 3. `sum_to_n_c`
 - Initially, I wanted to create a global array to store previously computed results for `n = 1` to `MAX_SAFE_INTEGER`, but memory limitations do not allow this.  
@@ -63,4 +63,6 @@ Future queries can then be answered in O(1) time.
 
 1. CD THREE-WAYS-TO-SUM-N
 
-2. npx ts-node problem1.ts in terminal
+2. npm install -g ts-node typescript
+
+3. npx ts-node problem1.ts in terminal

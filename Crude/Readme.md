@@ -49,11 +49,11 @@ class product {
 git clone https://github.com/nguyenhuynhphuongloc/99Tech-CodeChallenge.git
 
 
-2. npm install dependencies
+2. npm install
 
 
 3. Create .env file
-touch .env
+
 
 Add the following variables to .env
 
