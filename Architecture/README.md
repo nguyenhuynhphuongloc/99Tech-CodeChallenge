@@ -3,7 +3,7 @@
 
 # 1. Overview
 
-- The Scoreboard Module provides top 10 users based on their scores, which allows user to update their score after completing actions and making sure that the score board is always live and accurate
+- The Scoreboard Module provides top 10 users based on their scores, which allows user to update their score after completing actions and making sure that the score board is always live and accurate.
 
 # 2. Actors
 -  User: Completes actions to update points and views the score board.    
@@ -14,9 +14,12 @@ The resource is `UserScore`
 
 class UserScore
 {
+
   id!: string;        // Unique user ID
   
   userName!: string;  // User name
+
+  actionType: string // actions that use complete
   
   score!: number;     // current score
   
@@ -26,7 +29,7 @@ class UserScore
 
 # Functional Requirements
 
-+ Update User Score: Update a user's score after completing an action.
++ User Action : Update a user's score after completing an action.
 
 + Get Top 10 Users: Fetch top 10 users sorted by score (descending).
 
@@ -36,28 +39,57 @@ class UserScore
 
 + Authorization & Validation: Authenticate user before updating scores
 
-# API Endpoints
-1. Update User Score
-Method: POST
-Endpoint: /scores/update
-Description: Update a user's score after completing an action.
+1. User Action
+   
++ Endpoint: POST /api/actions/complete.
 
-Error Responses: 400 Bad Request → invalid scoreDelta , 401 Unauthorized → user not authenticated
++ Description: Updates the user’s score after completing an action.
 
++ Request:
 
-# 2. Get Top 10 Users
+- Headers: Authorization: Bearer <JWT>
 
-Method: GET
+- Body : actionType: string
 
-Endpoint: /scores/top
++ Response (200 OK):
+{
 
-Description: Get top 10 users sorted by score descending.
+  "userId": string,
+  "userName": string,
+  "score": number
+  "updatedAt": DATE
 
-Request Body: None
+Error Responses: 401 Unauthorized ,403 Forbidden ,429 Too Many Requests,500 Internal Server Error
 
-Response (200 OK)
+2. Get Top 10 Users
 
-# 3.Live Scoreboard Updates
+Endpoint: GET /api/scores/top
+
+Description: Get top 10 users based their score
+
+Request: NONE
+
+Resonpse: List UserScore
+
+Error Responses: 500 Internal Server Error
+
+3. Live Scoreboard Updates
+
+Endpoint: GET /api/scores/stream
+
+Description: returns a continuous event stream whenever user completed action.
+
+Request:
+
++ Headers:
+
+Authorization: Bearer <JWT>
+
+Response (Streamed Events):
+
+Status: 200 OK
+
+Content-Type: text/event-stream
 
 # Suggestions
 
@@ -67,9 +99,12 @@ Response (200 OK)
 
 + Maintain audit logs of score changes for security and analytics.
 
++ Using JWT or Role-based access control for every request to prevent malicious users.
+
 # Diagram illustrate the flows
 
 ![HomePage](./image/image1.png)
+
 
 
 
