@@ -41,7 +41,7 @@ class UserScore
 
 # API ENDPOINT
 
-1. User Action
+## User Action
    
 + Endpoint: POST /api/actions/complete.
 
@@ -69,7 +69,7 @@ class UserScore
 
 Error Responses: 401 Unauthorized ,403 Forbidden ,429 Too Many Requests,500 Internal Server Error
 
-2. Get Top 10 Users
+##  Get Top 10 Users
 
 Endpoint: GET /api/scores/top
 
@@ -81,7 +81,7 @@ Resonpse: List UserScore
 
 Error Responses: 500 Internal Server Error
 
-3. Live Scoreboard Updates
+##  Live Scoreboard Updates
 
 Endpoint: GET /api/scores/stream
 
@@ -112,6 +112,7 @@ Content-Type: text/event-stream
 # Diagram illustrate the flows
 
 ![HomePage](./image/image1.png)
+
 
 
 
